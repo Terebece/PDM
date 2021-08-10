@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Intenciones en Android</string>
+    <string name="name_label">Ingresa tu nombre</string>
+    <string name="button_label">Enviar</string>
+    <string name="label_web">Página web</string>
+    <string name="label_map">Mapa</string>
+</resources>

@@ -11,7 +11,7 @@
         android:id="@+id/buttonReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="170dp"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="@color/color_button"
         android:textColor="@color/black"

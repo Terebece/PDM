@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calculadora de IMC</string>
+    <string name="weight">Ingresa tu peso (Kg):</string>
+    <string name="height">Ingresa tu estatura (cm):</string>
+    <string name="calculateBMI">Calcular IMC</string>
+    <string name="very_severely_underweight">Muy severamente bajo de peso</string>
+    <string name="severely_underweight">Severamente bajo de peso</string>
+    <string name="underweight">Bajo de peso</string>
+    <string name="normal">Normal (Peso saludable)</string>
+    <string name="overweight">Sobrepeso</string>
+    <string name="obese_class_i">Moderadamente obeso</string>
+    <string name="obese_class_ii">Severamente obeso</string>
+    <string name="obese_class_iii">Muy severamente obeso</string>
+</resources>

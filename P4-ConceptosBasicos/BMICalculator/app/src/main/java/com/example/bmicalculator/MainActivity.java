@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText height;
     private TextView result;
     private EditText weight;
+    private Button calculate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +22,19 @@ public class MainActivity extends AppCompatActivity {
         height = (EditText) findViewById(R.id.height);
         result = (TextView) findViewById(R.id.result);
         weight = (EditText) findViewById(R.id.weight);
+        calculate = (Button) findViewById(R.id.calculate);
+
+        calculate.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                calculateBMI();
+            }
+
+        });
     }
 
-    public void calculateBMI(View v) {
+    public void calculateBMI() {
         String strHeight = height.getText().toString();
         String strWeight = weight.getText().toString();
 
@@ -34,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
             double bmi = weightValue / (heightValue * heightValue);
             double bmi_result = Math.round(bmi * 100.0) / 100.0;
-            calculateBMI(bmi_result);
+            auxCalulateBMI(bmi_result);
         }
     }
 
-    private void calculateBMI(double bmi) {
+    private void auxCalulateBMI(double bmi) {
         String bmiLabel = "";
 
         if (Double.compare(bmi, 15) <= 0) {

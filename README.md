@@ -15,3 +15,5 @@ Prácticas de ayudantía:
 Tareas:
 
 * Tarea 1
+
+En la carpeta CapturasApp se encuentran capturas de pantalla de la aplicación.
